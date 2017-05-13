@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Light.otf">
+            <string>SFUIDisplay-Light</string>
+        </array>
+        <array key="SFUIText-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupDetailTableViewCell" id="Qz3-D4-G6X" customClass="GroupDetailTableViewCell" customModule="DCL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qz3-D4-G6X" id="pTh-WL-C1G">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zs1-cT-YXK" userLabel="Header View">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4h-V1-bem" userLabel="Center View">
+                                <rect key="frame" x="0.0" y="40" width="375" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="EaC-wW-qul"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_profile" translatesAutoresizingMaskIntoConstraints="NO" id="iH0-W4-v7e">
+                                <rect key="frame" x="1" y="22" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Ugf-Vh-Vz0"/>
+                                    <constraint firstAttribute="width" secondItem="iH0-W4-v7e" secondAttribute="height" multiplier="1:1" id="go3-cz-pNb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zs7-4h-xNI">
+                                <rect key="frame" x="48" y="23" width="312" height="17"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="14"/>
+                                <color key="textColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No dreams shared " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ea-ab-HNL">
+                                <rect key="frame" x="48" y="40" width="312" height="17"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="14"/>
+                                <color key="textColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8ea-ab-HNL" firstAttribute="top" secondItem="f4h-V1-bem" secondAttribute="bottom" id="5Qb-T7-ko2"/>
+                            <constraint firstItem="f4h-V1-bem" firstAttribute="top" secondItem="zs7-4h-xNI" secondAttribute="bottom" id="Bam-a8-wEQ"/>
+                            <constraint firstItem="f4h-V1-bem" firstAttribute="leading" secondItem="zs1-cT-YXK" secondAttribute="leading" id="CGK-Gm-D7o"/>
+                            <constraint firstAttribute="height" constant="80" id="CaH-BA-wiY"/>
+                            <constraint firstItem="zs7-4h-xNI" firstAttribute="leading" secondItem="iH0-W4-v7e" secondAttribute="trailing" constant="12" id="IVk-ia-Kd3"/>
+                            <constraint firstItem="8ea-ab-HNL" firstAttribute="leading" secondItem="iH0-W4-v7e" secondAttribute="trailing" constant="12" id="K1o-qV-0bf"/>
+                            <constraint firstAttribute="trailing" secondItem="f4h-V1-bem" secondAttribute="trailing" id="NjU-s8-Xf0"/>
+                            <constraint firstAttribute="trailing" secondItem="8ea-ab-HNL" secondAttribute="trailing" constant="15" id="Qvg-KY-UOU"/>
+                            <constraint firstAttribute="trailing" secondItem="zs7-4h-xNI" secondAttribute="trailing" constant="15" id="RNt-tg-Acz"/>
+                            <constraint firstItem="iH0-W4-v7e" firstAttribute="leading" secondItem="zs1-cT-YXK" secondAttribute="leading" constant="1" id="VvU-9S-hCu"/>
+                            <constraint firstItem="iH0-W4-v7e" firstAttribute="centerY" secondItem="zs1-cT-YXK" secondAttribute="centerY" id="m65-Jp-COB"/>
+                            <constraint firstItem="f4h-V1-bem" firstAttribute="centerY" secondItem="zs1-cT-YXK" secondAttribute="centerY" id="n7e-uo-7PO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zs1-cT-YXK" firstAttribute="leading" secondItem="pTh-WL-C1G" secondAttribute="leading" id="Lb9-RP-ln9"/>
+                    <constraint firstItem="zs1-cT-YXK" firstAttribute="top" secondItem="pTh-WL-C1G" secondAttribute="top" id="RKg-XB-2Sh"/>
+                    <constraint firstAttribute="bottom" secondItem="zs1-cT-YXK" secondAttribute="bottom" id="Vp3-dz-Trf"/>
+                    <constraint firstAttribute="trailing" secondItem="zs1-cT-YXK" secondAttribute="trailing" id="e4A-ID-jCU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="zs7-4h-xNI" id="7SQ-9F-gRq"/>
+                <outlet property="numberDreams" destination="8ea-ab-HNL" id="CoL-1d-SiP"/>
+                <outlet property="profileImageView" destination="iH0-W4-v7e" id="Fr8-lV-6q9"/>
+            </connections>
+            <point key="canvasLocation" x="38.5" y="-20"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile_profile" width="175" height="175"/>
+    </resources>
+</document>

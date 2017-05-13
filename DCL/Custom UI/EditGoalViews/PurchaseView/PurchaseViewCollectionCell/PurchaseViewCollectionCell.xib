@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nRn-Ze-sDt" customClass="PurchaseViewCollectionCell" customModule="DCL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="190" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82g-ZB-MCc">
+                        <rect key="frame" x="0.0" y="0.0" width="190" height="99"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wae-Xx-EMG">
+                                <rect key="frame" x="19" y="15" width="152" height="69"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wae-Xx-EMG" firstAttribute="centerY" secondItem="82g-ZB-MCc" secondAttribute="centerY" id="NGs-NY-7ml"/>
+                            <constraint firstItem="wae-Xx-EMG" firstAttribute="height" secondItem="82g-ZB-MCc" secondAttribute="height" multiplier="0.7" id="ruc-P5-1hj"/>
+                            <constraint firstItem="wae-Xx-EMG" firstAttribute="width" secondItem="82g-ZB-MCc" secondAttribute="width" multiplier="0.8" id="xmT-Zw-sYE"/>
+                            <constraint firstItem="wae-Xx-EMG" firstAttribute="centerX" secondItem="82g-ZB-MCc" secondAttribute="centerX" id="yvc-K1-r50"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="82g-ZB-MCc" secondAttribute="trailing" id="9cp-cq-J3Q"/>
+                <constraint firstItem="82g-ZB-MCc" firstAttribute="top" secondItem="nRn-Ze-sDt" secondAttribute="top" id="egM-Ao-x89"/>
+                <constraint firstAttribute="bottom" secondItem="82g-ZB-MCc" secondAttribute="bottom" constant="1" id="h1O-5N-o8u"/>
+                <constraint firstItem="82g-ZB-MCc" firstAttribute="leading" secondItem="nRn-Ze-sDt" secondAttribute="leading" id="i9N-ZF-ElW"/>
+            </constraints>
+            <connections>
+                <outlet property="leftOffsetConstraint" destination="i9N-ZF-ElW" id="Cqp-Es-Hpm"/>
+                <outlet property="mainImageView" destination="wae-Xx-EMG" id="Zuv-SW-5ig"/>
+                <outlet property="rightOffsetConstraint" destination="9cp-cq-J3Q" id="Sne-x4-gHw"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="-3"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JPu-hz-xgK" customClass="PlacesViewCell" customModule="DCL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JPu-hz-xgK" id="BLE-Pi-Vcl">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOE-EG-hjF">
+                        <rect key="frame" x="47" y="5" width="323" height="33.5"/>
+                        <attributedString key="attributedText"/>
+                        <color key="highlightedColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location_edit_goal" translatesAutoresizingMaskIntoConstraints="NO" id="oGc-z0-JEV">
+                        <rect key="frame" x="27" y="13" width="13" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="DiR-lX-eT4"/>
+                            <constraint firstAttribute="height" constant="16" id="k6h-Nr-Xed"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vOE-EG-hjF" firstAttribute="top" secondItem="BLE-Pi-Vcl" secondAttribute="top" constant="5" id="B8f-4c-2BU"/>
+                    <constraint firstItem="vOE-EG-hjF" firstAttribute="leading" secondItem="BLE-Pi-Vcl" secondAttribute="leading" constant="47" id="LLb-AI-KyP"/>
+                    <constraint firstAttribute="bottom" secondItem="vOE-EG-hjF" secondAttribute="bottom" constant="5" id="Raq-WW-MbF"/>
+                    <constraint firstItem="oGc-z0-JEV" firstAttribute="top" secondItem="vOE-EG-hjF" secondAttribute="top" constant="8" id="gVP-xa-ZT0"/>
+                    <constraint firstAttribute="trailing" secondItem="vOE-EG-hjF" secondAttribute="trailing" constant="5" id="trI-rH-clr"/>
+                    <constraint firstItem="oGc-z0-JEV" firstAttribute="leading" secondItem="BLE-Pi-Vcl" secondAttribute="leading" constant="27" id="wZu-NT-PI0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="placeLabel" destination="vOE-EG-hjF" id="fRU-Xp-sUq"/>
+            </connections>
+            <point key="canvasLocation" x="21.5" y="-84"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="location_edit_goal" width="25" height="32"/>
+    </resources>
+</document>

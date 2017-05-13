@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DateView" customModule="DCL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Rf-jS-wbj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wru-TG-dhW">
+                            <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                            <date key="date" timeIntervalSinceReferenceDate="508929963.69727802">
+                                <!--2017-02-16 09:26:03 +0000-->
+                            </date>
+                        </datePicker>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JOc-Up-pJ5">
+                            <rect key="frame" x="0.0" y="419" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <items>
+                                <barButtonItem width="4" style="plain" systemItem="fixedSpace" id="R0s-ol-c5f"/>
+                                <barButtonItem title="Cancel" width="89" id="vMY-IL-mp3">
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="cancelButtonPressed:" destination="iN0-l3-epB" id="53V-6f-t4k"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="Kd4-Gs-NZr"/>
+                                <barButtonItem title="Save" id="PkA-PM-wpz">
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="saveButtonPressed:" destination="iN0-l3-epB" id="K3C-KC-RNX"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="hAU-vD-EHk"/>
+                            </items>
+                        </toolbar>
+                    </subviews>
+                    <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="wru-TG-dhW" secondAttribute="bottom" id="J6j-wX-aix"/>
+                        <constraint firstAttribute="trailing" secondItem="wru-TG-dhW" secondAttribute="trailing" id="MeM-vc-GwD"/>
+                        <constraint firstItem="wru-TG-dhW" firstAttribute="leading" secondItem="1Rf-jS-wbj" secondAttribute="leading" id="mPg-LK-cJD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1Rf-jS-wbj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EaR-ts-AOA"/>
+                <constraint firstAttribute="trailing" secondItem="1Rf-jS-wbj" secondAttribute="trailing" id="Y83-RU-lVA"/>
+                <constraint firstAttribute="bottom" secondItem="1Rf-jS-wbj" secondAttribute="bottom" id="ps8-5r-Zpr"/>
+                <constraint firstItem="1Rf-jS-wbj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sPN-po-1P1"/>
+            </constraints>
+            <connections>
+                <outlet property="datePicker" destination="wru-TG-dhW" id="Xjh-Ze-E78"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

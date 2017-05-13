@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+        <array key="SFUIText-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AchieveAndCelebrateView" customModule="DCL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kCx-WS-CeL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fdo-NA-gqD">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        </imageView>
+                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiV-Fu-r4k">
+                            <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                            <color key="backgroundColor" red="0.72549019607843135" green="0.5490196078431373" blue="0.76470588235294112" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="HyH-hV-qgt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="16"/>
+                            <state key="normal" title="DONE">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="OIL-ue-R0z"/>
+                            </connections>
+                        </button>
+                        <label hidden="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are living your dreams!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pud-tB-w4I">
+                            <rect key="frame" x="25" y="327" width="325" height="72"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI  Text" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="well_done_archive" translatesAutoresizingMaskIntoConstraints="NO" id="75N-dn-K4r">
+                            <rect key="frame" x="44.5" y="268.5" width="285" height="130"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="75N-dn-K4r" secondAttribute="height" multiplier="286:130" id="mt1-Tv-sTu"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="jiV-Fu-r4k" secondAttribute="bottom" id="0mg-Ci-yoD"/>
+                        <constraint firstAttribute="trailing" secondItem="jiV-Fu-r4k" secondAttribute="trailing" id="46N-4A-adf"/>
+                        <constraint firstItem="pud-tB-w4I" firstAttribute="centerX" secondItem="kCx-WS-CeL" secondAttribute="centerX" id="4VR-BR-2f8"/>
+                        <constraint firstAttribute="trailing" secondItem="fdo-NA-gqD" secondAttribute="trailing" id="6ed-wL-Gwq"/>
+                        <constraint firstItem="pud-tB-w4I" firstAttribute="centerY" secondItem="kCx-WS-CeL" secondAttribute="centerY" constant="30" id="A98-hY-oy6"/>
+                        <constraint firstItem="75N-dn-K4r" firstAttribute="width" secondItem="kCx-WS-CeL" secondAttribute="width" multiplier="0.76" id="COB-sw-RcP"/>
+                        <constraint firstAttribute="trailing" secondItem="pud-tB-w4I" secondAttribute="trailing" constant="25" id="Hlk-xy-g59"/>
+                        <constraint firstItem="75N-dn-K4r" firstAttribute="centerX" secondItem="kCx-WS-CeL" secondAttribute="centerX" id="Pdu-Ec-tov"/>
+                        <constraint firstAttribute="bottom" secondItem="fdo-NA-gqD" secondAttribute="bottom" id="XGs-xX-vt1"/>
+                        <constraint firstItem="fdo-NA-gqD" firstAttribute="leading" secondItem="kCx-WS-CeL" secondAttribute="leading" id="jbf-zQ-v3s"/>
+                        <constraint firstItem="jiV-Fu-r4k" firstAttribute="leading" secondItem="kCx-WS-CeL" secondAttribute="leading" id="sRM-Mh-Ysv"/>
+                        <constraint firstItem="pud-tB-w4I" firstAttribute="leading" secondItem="kCx-WS-CeL" secondAttribute="leading" constant="25" id="uzw-to-gGO"/>
+                        <constraint firstItem="fdo-NA-gqD" firstAttribute="top" secondItem="kCx-WS-CeL" secondAttribute="top" id="yI9-si-d5I"/>
+                        <constraint firstItem="75N-dn-K4r" firstAttribute="centerY" secondItem="kCx-WS-CeL" secondAttribute="centerY" id="yMc-fA-MDM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kCx-WS-CeL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PMg-3F-wBY"/>
+                <constraint firstItem="kCx-WS-CeL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZRQ-My-qZB"/>
+                <constraint firstAttribute="bottom" secondItem="kCx-WS-CeL" secondAttribute="bottom" id="gcS-x1-oon"/>
+                <constraint firstAttribute="trailing" secondItem="kCx-WS-CeL" secondAttribute="trailing" id="noI-Dk-Epa"/>
+            </constraints>
+            <connections>
+                <outlet property="doneButton" destination="jiV-Fu-r4k" id="cyY-7k-Dfi"/>
+                <outlet property="imageView" destination="fdo-NA-gqD" id="hGM-c2-6CS"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="well_done_archive" width="534" height="249"/>
+    </resources>
+</document>

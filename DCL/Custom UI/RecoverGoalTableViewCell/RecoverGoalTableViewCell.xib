@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Light.otf">
+            <string>SFUIDisplay-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecoverGoalTableViewCell" id="bvp-cd-xcw" customClass="RecoverGoalTableViewCell" customModule="DCL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bvp-cd-xcw" id="eTR-ek-SaW">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_profile" translatesAutoresizingMaskIntoConstraints="NO" id="duM-5O-vPN">
+                        <rect key="frame" x="18" y="13.5" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="duM-5O-vPN" secondAttribute="height" multiplier="1:1" id="Kto-As-W6J"/>
+                            <constraint firstAttribute="height" constant="16" id="ZAD-nd-MSa"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dw4-CS-x5o">
+                        <rect key="frame" x="52" y="5" width="308" height="34.5"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="21"/>
+                        <color key="textColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="duM-5O-vPN" firstAttribute="centerY" secondItem="eTR-ek-SaW" secondAttribute="centerY" id="1gG-ve-6h0"/>
+                    <constraint firstItem="dw4-CS-x5o" firstAttribute="leading" secondItem="eTR-ek-SaW" secondAttribute="leadingMargin" constant="44" id="QRs-Fy-OPb"/>
+                    <constraint firstAttribute="trailing" secondItem="dw4-CS-x5o" secondAttribute="trailing" constant="15" id="uyH-j1-gUf"/>
+                    <constraint firstItem="duM-5O-vPN" firstAttribute="leading" secondItem="eTR-ek-SaW" secondAttribute="leading" constant="18" id="zy5-1Y-JBL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dw4-CS-x5o" secondAttribute="bottom" constant="5" id="7an-DT-dxi"/>
+                <constraint firstItem="dw4-CS-x5o" firstAttribute="top" secondItem="bvp-cd-xcw" secondAttribute="top" constant="5" id="7j7-4O-sQj"/>
+            </constraints>
+            <connections>
+                <outlet property="checkedImageView" destination="duM-5O-vPN" id="5Qk-Ld-JeM"/>
+                <outlet property="titleLabel" destination="dw4-CS-x5o" id="6UZ-A2-QCe"/>
+            </connections>
+            <point key="canvasLocation" x="19.5" y="-85"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check_profile" width="32" height="32"/>
+    </resources>
+</document>

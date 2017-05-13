@@ -1,0 +1,41 @@
+/* 
+  Localizable.strings
+  DCL
+
+  Created by Nikita on 1/27/17.
+  Copyright © 2017 Nikita. All rights reserved.
+*/
+
+"Error" = "Error";
+" field is empty" = " field is empty";
+"Friends Invited:" = "Friends Invited:";
+"Start a new dream" = "Start a new dream";
+"Add Checklist" = "Add Checklist";
+"Write reminders" = "Write reminders";
+"Tag Location" = "Tag Location";
+"First you need to choose header photo!" = "First you need to choose header photo!";
+"Fields are empty or not equal" = "Fields are empty or not equal";
+"Sorry, You can't change! You have logged from facebook" = "Sorry, You can't change! You have logged from facebook";
+"Invite has been sent successfully" = "Invite has been sent successfully";
+"Invite by email" = "Invite by email";
+"Invite to group" = "Invite to group";
+"To big file" = "To big file";
+"No dreams shared" = "No dreams shared";
+"dreams shared" = "dreams shared";
+"Start a new dream" = "Start a new dream";
+"MOTIVATION" = "MOTIVATION";
+"If you fall asleep now, you will dream. If you study now, you will live your dream." = "If you fall asleep now, you will dream. If you study now, you will live your dream.";
+"THANK YOU" = "THANK YOU";
+"COMPLETE" = "COMPLETE";
+"Selected goals were successfully restored" = "Selected goals were successfully restored";
+"OK" = "OK";
+"Some field is empty" = "Some field is empty";
+"Password and retype password are not equel" = "Password and retype password are not equel";
+"Convert your dreams" = "Convert your dreams";
+"into real-life achievements" = "into real-life achievements";
+"Nothing to change" = "Nothing to change";
+"Please use the Reminder field for more text." = "Please use the Reminder field for more text.";
+"INVITE TO DREAM" = "INVITE TO DREAM";
+"dream shared" = "dream shared";
+"Server error" = "Server error";
+

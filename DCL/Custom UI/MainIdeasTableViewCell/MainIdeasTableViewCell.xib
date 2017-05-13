@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainIdeasTableViewCell" id="SRT-O5-Bxr" customClass="MainIdeasTableViewCell" customModule="DCL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SRT-O5-Bxr" id="iFI-Re-GQ2">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="124.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hSb-bM-fIO">
+                        <rect key="frame" x="0.0" y="2" width="375" height="120.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ps-8S-Lbd">
+                        <rect key="frame" x="15" y="94.5" width="38" height="19"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GV8-kQ-SYc">
+                        <rect key="frame" x="322" y="94.5" width="38" height="19"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="4Ps-8S-Lbd" firstAttribute="leading" secondItem="iFI-Re-GQ2" secondAttribute="leading" constant="15" id="92U-kb-bhh"/>
+                    <constraint firstItem="hSb-bM-fIO" firstAttribute="leading" secondItem="iFI-Re-GQ2" secondAttribute="leading" id="BX0-dV-MXN"/>
+                    <constraint firstItem="hSb-bM-fIO" firstAttribute="top" secondItem="iFI-Re-GQ2" secondAttribute="top" constant="2" id="DQg-3r-zMS"/>
+                    <constraint firstAttribute="bottom" secondItem="hSb-bM-fIO" secondAttribute="bottom" constant="2" id="G6F-Zm-moV"/>
+                    <constraint firstAttribute="trailing" secondItem="hSb-bM-fIO" secondAttribute="trailing" id="Mb8-44-sh7"/>
+                    <constraint firstAttribute="bottom" secondItem="GV8-kQ-SYc" secondAttribute="bottom" constant="11" id="aJM-JD-Qmi"/>
+                    <constraint firstAttribute="bottom" secondItem="4Ps-8S-Lbd" secondAttribute="bottom" constant="11" id="cQX-KZ-ag9"/>
+                    <constraint firstAttribute="trailing" secondItem="GV8-kQ-SYc" secondAttribute="trailing" constant="15" id="nTb-ob-lne"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ideasNumberLabel" destination="GV8-kQ-SYc" id="SNV-yh-kv3"/>
+                <outlet property="mainImageView" destination="hSb-bM-fIO" id="nWb-lF-hC6"/>
+                <outlet property="titleLabel" destination="4Ps-8S-Lbd" id="m9n-r7-6Pu"/>
+            </connections>
+            <point key="canvasLocation" x="38.5" y="-20.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PurchaseView" customModule="DCL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="410"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wqw-6y-FRr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lb8-b1-ctX">
+                            <rect key="frame" x="10" y="42" width="355" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="ENw-D1-7Ur"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Put everything in place to achieve your dream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="KJf-5K-SZ7">
+                            <rect key="frame" x="30" y="12.5" width="315" height="19"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="16"/>
+                            <color key="textColor" red="1" green="0.59607843137254901" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="KJf-5K-SZ7" firstAttribute="leading" secondItem="Wqw-6y-FRr" secondAttribute="leading" constant="30" id="00p-jI-RMX"/>
+                        <constraint firstAttribute="trailing" secondItem="lb8-b1-ctX" secondAttribute="trailing" constant="10" id="Ndu-xp-M4u"/>
+                        <constraint firstAttribute="bottom" secondItem="lb8-b1-ctX" secondAttribute="bottom" id="OFa-kZ-0SI"/>
+                        <constraint firstAttribute="trailing" secondItem="KJf-5K-SZ7" secondAttribute="trailing" constant="30" id="SLe-cT-FNe"/>
+                        <constraint firstItem="KJf-5K-SZ7" firstAttribute="centerY" secondItem="Wqw-6y-FRr" secondAttribute="centerY" id="gI9-hY-ucu"/>
+                        <constraint firstAttribute="height" constant="43" id="ith-U2-0If"/>
+                        <constraint firstItem="lb8-b1-ctX" firstAttribute="leading" secondItem="Wqw-6y-FRr" secondAttribute="leading" constant="10" id="u5y-i7-BVR"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Pel-pU-xV4">
+                    <rect key="frame" x="10" y="43" width="355" height="367"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JYT-UX-D2k">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Pel-pU-xV4" secondAttribute="bottom" id="4fa-mC-WOR"/>
+                <constraint firstItem="Wqw-6y-FRr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SI8-bO-MHW"/>
+                <constraint firstItem="Pel-pU-xV4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="a1J-Ur-M9a"/>
+                <constraint firstItem="Pel-pU-xV4" firstAttribute="top" secondItem="Wqw-6y-FRr" secondAttribute="bottom" id="gAi-FM-ItK"/>
+                <constraint firstAttribute="trailing" secondItem="Pel-pU-xV4" secondAttribute="trailing" constant="10" id="svG-9s-IAS"/>
+                <constraint firstItem="Wqw-6y-FRr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="svZ-fj-SMD"/>
+                <constraint firstAttribute="trailing" secondItem="Wqw-6y-FRr" secondAttribute="trailing" id="vLd-eo-EXS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="Pel-pU-xV4" id="cy5-22-ilW"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="52"/>
+        </view>
+    </objects>
+</document>

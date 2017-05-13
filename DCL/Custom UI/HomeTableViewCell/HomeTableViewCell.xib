@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTableViewCell" id="9I9-C9-gaC" customClass="HomeTableViewCell" customModule="DCL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9I9-C9-gaC" id="z1a-eF-oBg">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lv4-Ys-fEo">
+                        <rect key="frame" x="0.0" y="2" width="375" height="39.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7W0-H2-NXC">
+                                <rect key="frame" x="15" y="12" width="345" height="19"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7W0-H2-NXC" secondAttribute="trailing" constant="15" id="1uF-eP-I7v"/>
+                            <constraint firstItem="7W0-H2-NXC" firstAttribute="leading" secondItem="Lv4-Ys-fEo" secondAttribute="leading" constant="15" id="79F-fP-Ly8"/>
+                            <constraint firstItem="7W0-H2-NXC" firstAttribute="top" secondItem="Lv4-Ys-fEo" secondAttribute="top" constant="12" id="GNL-U9-Jk0"/>
+                            <constraint firstAttribute="bottom" secondItem="7W0-H2-NXC" secondAttribute="bottom" constant="8" id="zoG-90-sSZ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Lv4-Ys-fEo" secondAttribute="trailing" id="69t-mJ-5Nc"/>
+                    <constraint firstAttribute="bottom" secondItem="Lv4-Ys-fEo" secondAttribute="bottom" constant="2" id="Clb-J5-Hwg"/>
+                    <constraint firstItem="Lv4-Ys-fEo" firstAttribute="leading" secondItem="z1a-eF-oBg" secondAttribute="leading" id="EwU-rk-b57"/>
+                    <constraint firstItem="Lv4-Ys-fEo" firstAttribute="top" secondItem="z1a-eF-oBg" secondAttribute="top" constant="2" id="hZ0-DT-gQi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="ideaLabel" destination="7W0-H2-NXC" id="zyS-HV-RjD"/>
+                <outlet property="mainView" destination="Lv4-Ys-fEo" id="wYw-LK-mq8"/>
+            </connections>
+            <point key="canvasLocation" x="21.5" y="-121"/>
+        </tableViewCell>
+    </objects>
+</document>

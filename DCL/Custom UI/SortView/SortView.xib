@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SortView" customModule="DCL" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvf-dd-UuB">
+                    <rect key="frame" x="55" y="205.5" width="265" height="256"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SORTING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfc-89-5te">
+                            <rect key="frame" x="50" y="21" width="165" height="25.5"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="21"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort Alphabetically" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hao-sP-DnE">
+                            <rect key="frame" x="29" y="67.5" width="212" height="30.5"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="21"/>
+                            <color key="textColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t77-Lr-WWQ">
+                            <rect key="frame" x="29" y="67.5" width="212" height="30"/>
+                            <connections>
+                                <action selector="sortAlphabeticallyButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ywp-jo-cJm"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort by Creation Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHh-Os-gWN">
+                            <rect key="frame" x="29" y="113" width="212" height="30"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="21"/>
+                            <color key="textColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNA-pg-T2s">
+                            <rect key="frame" x="29" y="113" width="212" height="30"/>
+                            <connections>
+                                <action selector="sortByCreationDateButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="QaR-QK-qZU"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort on Date Achieved" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nso-AG-FRt">
+                            <rect key="frame" x="29" y="158" width="203" height="30"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="21"/>
+                            <color key="textColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOK-dp-JzR">
+                            <rect key="frame" x="29" y="158" width="203" height="30"/>
+                            <connections>
+                                <action selector="sortOnDateToAchieveButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="lSi-JV-i4R"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort by Color" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcb-09-sCb">
+                            <rect key="frame" x="29" y="203" width="212" height="30"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="21"/>
+                            <color key="textColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9XM-Tl-CtU">
+                            <rect key="frame" x="29" y="203" width="212" height="30"/>
+                            <connections>
+                                <action selector="sortByColorButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Tow-Lq-jv0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="9XM-Tl-CtU" firstAttribute="top" secondItem="Qcb-09-sCb" secondAttribute="top" id="16V-SG-n9S"/>
+                        <constraint firstItem="Qcb-09-sCb" firstAttribute="top" secondItem="nso-AG-FRt" secondAttribute="bottom" constant="15" id="3Wg-ZI-21W"/>
+                        <constraint firstAttribute="width" constant="265" id="3sL-71-wwc"/>
+                        <constraint firstItem="t77-Lr-WWQ" firstAttribute="top" secondItem="hao-sP-DnE" secondAttribute="top" id="7O8-3q-5b1"/>
+                        <constraint firstItem="QHh-Os-gWN" firstAttribute="top" secondItem="hao-sP-DnE" secondAttribute="bottom" constant="15" id="7XO-FV-HLI"/>
+                        <constraint firstItem="t77-Lr-WWQ" firstAttribute="trailing" secondItem="hao-sP-DnE" secondAttribute="trailing" id="EN4-bu-cBf"/>
+                        <constraint firstItem="t77-Lr-WWQ" firstAttribute="bottom" secondItem="hao-sP-DnE" secondAttribute="bottom" id="FJR-oq-fta"/>
+                        <constraint firstItem="hao-sP-DnE" firstAttribute="trailing" secondItem="QHh-Os-gWN" secondAttribute="trailing" id="JnM-VE-p5T"/>
+                        <constraint firstItem="QHh-Os-gWN" firstAttribute="leading" secondItem="bvf-dd-UuB" secondAttribute="leading" constant="29" id="Mta-zu-pJH"/>
+                        <constraint firstItem="Qcb-09-sCb" firstAttribute="trailing" secondItem="QHh-Os-gWN" secondAttribute="trailing" id="QJB-JH-SaH"/>
+                        <constraint firstItem="Vfc-89-5te" firstAttribute="top" secondItem="bvf-dd-UuB" secondAttribute="top" constant="21" id="QRX-WF-VEF"/>
+                        <constraint firstItem="KNA-pg-T2s" firstAttribute="trailing" secondItem="QHh-Os-gWN" secondAttribute="trailing" id="QkR-Hj-QRh"/>
+                        <constraint firstItem="Vfc-89-5te" firstAttribute="leading" secondItem="bvf-dd-UuB" secondAttribute="leading" constant="50" id="S2e-90-6P7"/>
+                        <constraint firstAttribute="trailing" secondItem="QHh-Os-gWN" secondAttribute="trailing" constant="24" id="TaG-Se-uDL"/>
+                        <constraint firstItem="AOK-dp-JzR" firstAttribute="leading" secondItem="nso-AG-FRt" secondAttribute="leading" id="UpW-7p-Mma"/>
+                        <constraint firstAttribute="trailing" secondItem="Vfc-89-5te" secondAttribute="trailing" constant="50" id="VeD-BX-hY3"/>
+                        <constraint firstItem="9XM-Tl-CtU" firstAttribute="leading" secondItem="Qcb-09-sCb" secondAttribute="leading" id="Xr3-hp-dmB"/>
+                        <constraint firstItem="AOK-dp-JzR" firstAttribute="bottom" secondItem="nso-AG-FRt" secondAttribute="bottom" id="Y7B-YH-kR4"/>
+                        <constraint firstItem="nso-AG-FRt" firstAttribute="top" secondItem="QHh-Os-gWN" secondAttribute="bottom" constant="15" id="a6f-dd-J43"/>
+                        <constraint firstItem="KNA-pg-T2s" firstAttribute="top" secondItem="QHh-Os-gWN" secondAttribute="top" id="bnx-LH-IlY"/>
+                        <constraint firstItem="AOK-dp-JzR" firstAttribute="trailing" secondItem="nso-AG-FRt" secondAttribute="trailing" id="h2L-U7-cVE"/>
+                        <constraint firstItem="9XM-Tl-CtU" firstAttribute="trailing" secondItem="Qcb-09-sCb" secondAttribute="trailing" id="h6n-su-Gso"/>
+                        <constraint firstItem="KNA-pg-T2s" firstAttribute="bottom" secondItem="QHh-Os-gWN" secondAttribute="bottom" id="hGk-Jx-lQK"/>
+                        <constraint firstAttribute="height" constant="256" id="mST-zV-yuo"/>
+                        <constraint firstItem="AOK-dp-JzR" firstAttribute="top" secondItem="nso-AG-FRt" secondAttribute="top" id="nON-3F-lN3"/>
+                        <constraint firstItem="t77-Lr-WWQ" firstAttribute="leading" secondItem="hao-sP-DnE" secondAttribute="leading" id="pnh-b3-d6b"/>
+                        <constraint firstItem="hao-sP-DnE" firstAttribute="leading" secondItem="QHh-Os-gWN" secondAttribute="leading" id="shQ-aR-g68"/>
+                        <constraint firstItem="KNA-pg-T2s" firstAttribute="leading" secondItem="QHh-Os-gWN" secondAttribute="leading" id="sz3-cJ-JGz"/>
+                        <constraint firstItem="Qcb-09-sCb" firstAttribute="leading" secondItem="QHh-Os-gWN" secondAttribute="leading" id="wHL-ae-3U3"/>
+                        <constraint firstItem="9XM-Tl-CtU" firstAttribute="bottom" secondItem="Qcb-09-sCb" secondAttribute="bottom" id="wNY-V1-drI"/>
+                        <constraint firstItem="QHh-Os-gWN" firstAttribute="centerY" secondItem="bvf-dd-UuB" secondAttribute="centerY" id="yIf-hG-Y8e"/>
+                        <constraint firstItem="nso-AG-FRt" firstAttribute="leading" secondItem="QHh-Os-gWN" secondAttribute="leading" id="zeG-Dm-yOb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.36078431372549019" green="0.36078431372549019" blue="0.36078431372549019" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="bvf-dd-UuB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="OXz-u1-baM"/>
+                <constraint firstItem="bvf-dd-UuB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="l6b-Lf-1ee"/>
+            </constraints>
+            <connections>
+                <outlet property="alphabeticallyLabel" destination="hao-sP-DnE" id="iMb-G0-2ZQ"/>
+                <outlet property="colorLabel" destination="Qcb-09-sCb" id="R9c-ci-ucc"/>
+                <outlet property="creationDateLabel" destination="QHh-Os-gWN" id="gEx-Od-Rdk"/>
+                <outlet property="dateArchieveLabel" destination="nso-AG-FRt" id="XCg-fv-GiG"/>
+                <outletCollection property="labels" destination="hao-sP-DnE" collectionClass="NSMutableArray" id="SIF-u7-IEm"/>
+                <outletCollection property="labels" destination="QHh-Os-gWN" collectionClass="NSMutableArray" id="7Eh-og-3EP"/>
+                <outletCollection property="labels" destination="nso-AG-FRt" collectionClass="NSMutableArray" id="g0I-gG-NHy"/>
+                <outletCollection property="labels" destination="Qcb-09-sCb" collectionClass="NSMutableArray" id="xII-Dz-QiQ"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
